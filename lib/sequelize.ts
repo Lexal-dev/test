@@ -1,6 +1,6 @@
 import { Sequelize } from 'sequelize';
 import dotenv from 'dotenv';
-
+import pg from "pg"
 // Charger les variables d'environnement
 dotenv.config();
 
@@ -18,6 +18,7 @@ const sequelizeInstance = new Sequelize(database, username, password, {
     host: host,
     port: port,
     dialect: 'postgres',
+    dialectModule: pg,
     dialectOptions: {
         ssl: {
             require: true,
