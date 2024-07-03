@@ -9,6 +9,9 @@ export default function Home() {
       <Link href="/api/test" className="font-bold text-2xl hover:text-green-300">
         [ API TEST ]
       </Link>
+      <Link href="/api/kanto" className="font-bold text-2xl hover:text-green-300">
+        [ API KANTO ]
+      </Link>
     </main>
   );
 }
